@@ -12,6 +12,7 @@ const DisplayChar = ({ props , loadChar}) => {
                 <Col md={{ span: 3, offset: 3 }}>
                     <Card style={{ width: '20rem' }}>
                         <Card.Img className="cardimage" variant="top" src={props.image? props.image : hp} />
+                        {/* the above line uses a ternary to show 'hp' if no image is provided from api */}
                         <Card.Body>
                             <Card.Title>{props.name}</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">{props.actor}</Card.Subtitle>

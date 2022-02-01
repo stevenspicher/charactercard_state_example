@@ -14,8 +14,12 @@ function CharacterSetup() {
     const [charObj, setCharObj] = useState({})
       return (
         <div className="cardframe">
-            <DisplayChar props={charObj} loadChar ={() => loadCharacter(setCharObj)} />
+         
+            <DisplayChar props={charObj} loadChar ={() => loadCharacter(setCharObj)} /> 
+               {/* note we are passing the local state (charObj) as a prop, and then 
+            passing the function to set local state (setCharObj) */}
         </div>
+
     );
 }
 
