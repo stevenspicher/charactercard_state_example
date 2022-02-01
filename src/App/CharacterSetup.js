@@ -6,7 +6,7 @@ function loadCharacter(setCharObj) {
     fetch(charUrl)
         .then(res => res.json())
         .then(data => {
-            setCharObj(data[Math.floor(Math.random() * 40)])
+            setCharObj(data[Math.floor(Math.random() * 20)])
         })
 }
 
